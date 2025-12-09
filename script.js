@@ -1,6 +1,5 @@
 const apiUrl = 'http://localhost/praktikum_fullstack/backend/';
 
-// Cek apakah script berjalan
 console.log("Script.js berhasil dimuat!");
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -114,4 +113,5 @@ function hapusData(id) {
             loadData();
         });
     }
+
 }
