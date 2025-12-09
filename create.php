@@ -20,7 +20,7 @@ if (empty($_POST)) {
     } else {
         echo "Browser tidak mengirim data apa pun.";
     }
-    exit; // Stop proses di sini
+    exit; 
 }
 
 $nama = isset($_POST['nama']) ? $_POST['nama'] : '';
@@ -38,8 +38,8 @@ $query = "INSERT INTO mahasiswa (nama, nim) VALUES ('$nama', '$nim')";
 if (mysqli_query($koneksi, $query)) {
     echo "STATUS: SUKSES (Data berhasil disimpan)";
 } else {
-    // Tampilkan error SQL spesifik
     echo "STATUS: ERROR SQL -> " . mysqli_error($koneksi);
 }
 
 ?>
+
